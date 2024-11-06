@@ -12,9 +12,9 @@ theme:
 
 nav:
   - Home: index.md
-  - Functions: functions.md
-  - HowToInstall: how_to_install.md
-  - HotKeys: hotkeys.md
-  - HowToUse: how_to_use.md
+  - 機能一覧: functions.md
+  - インストール方法: how_to_install.md
+  - 使用方法: how_to_use.md
+  - ホットキー: hotkeys.md
 markdown_extensions:
   - tables
