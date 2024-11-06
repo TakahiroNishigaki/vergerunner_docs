@@ -1,0 +1,20 @@
+site_name: VergeRunner
+theme:
+  name: material
+  palette:
+    media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to system preference
+    accent: teal
+    primary: teal
+
+nva:
+  - Home: index.md
+  - Functions: functions.md
+  - HowToInstall: how_to_install.md
+  - HotKeys: hotkeys.md
+  - HowToUse: how_to_use.md
+markdown_extensions:
+  - tables
