@@ -1,0 +1,1084 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../how_to_install/">
+      
+      
+        <link rel="next" href="../manual_analyst/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Trader - VergeRunner</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#trader" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="VergeRunner" class="md-header__button md-logo" aria-label="VergeRunner" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VergeRunner
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Trader
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="VergeRunner" class="md-nav__button md-logo" aria-label="VergeRunner" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    VergeRunner
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    機能一覧
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to_install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    インストール方法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    使用方法
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            使用方法
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Trader
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Trader
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      起動方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      クイックエントリー
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sltp" class="md-nav__link">
+    <span class="md-ellipsis">
+      SL/TP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      全ポジションエグジット
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="全ポジションエグジット">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      全決済
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      割合決済
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="割合決済">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      設定項目
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pips" class="md-nav__link">
+    <span class="md-ellipsis">
+      合計Pips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="合計Pips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pips_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      各ポジションのPipsラベルについて
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#positionmanager" class="md-nav__link">
+    <span class="md-ellipsis">
+      PositionManager
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lotcalculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      LotCalculator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LotCalculator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用する為の準備
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用方法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="使用方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      決済通貨ペア
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sl-pips" class="md-nav__link">
+    <span class="md-ellipsis">
+      S/L pips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tp-pips" class="md-nav__link">
+    <span class="md-ellipsis">
+      T/P pips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      許容損失率(%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pos分割数
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual_analyst/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analyst
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual_hider/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hider
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual_alert/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alert
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hotkeys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ホットキー
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ReleaseNote
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            ReleaseNote
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_note/rn_v1.2.0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    v1.2.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      起動方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      クイックエントリー
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sltp" class="md-nav__link">
+    <span class="md-ellipsis">
+      SL/TP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      全ポジションエグジット
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="全ポジションエグジット">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      全決済
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      割合決済
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="割合決済">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      設定項目
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pips" class="md-nav__link">
+    <span class="md-ellipsis">
+      合計Pips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="合計Pips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pips_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      各ポジションのPipsラベルについて
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#positionmanager" class="md-nav__link">
+    <span class="md-ellipsis">
+      PositionManager
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lotcalculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      LotCalculator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LotCalculator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用する為の準備
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用方法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="使用方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      決済通貨ペア
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sl-pips" class="md-nav__link">
+    <span class="md-ellipsis">
+      S/L pips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tp-pips" class="md-nav__link">
+    <span class="md-ellipsis">
+      T/P pips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      許容損失率(%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pos分割数
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="trader">Trader</h1>
+<p>トレーダーはエントリーやエグジットなどのポジションの管理をサポートするツールです。</p>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_001.png" /></p>
+<h3 id="_1">起動方法</h3>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_002.png" /></p>
+<p>VergeRunnerのメインウィンドウの画像のボタンをクリックすると起動します。</p>
+<h3 id="_2">クイックエントリー</h3>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_003.png" /></p>
+<p>MT4の標準機能と同様にワンクリックでポジションを取ることができます。</p>
+<p>SellボタンとBuyボタンの間にある数字はエントリーのLot数です。
+最小値は0.01になります</p>
+<h3 id="sltp">SL/TP</h3>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_004.png" /></p>
+<p>VergeRunnerのクイックエントリーを使用する際に適用されるSL/TPの設定です。</p>
+<p>単位はPipsになります。</p>
+<p>SL/TPの左側に位置するトグルボタンはエントリー時にSL/TPの適用をコントロールすることができます。</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>トグルボタンは緑色の状態が有効状態になります</p>
+</div>
+<h3 id="_3">全ポジションエグジット</h3>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_005.png" /></p>
+<p>現在保有する全てのポジションに対して約定処理を行います。
+各ボタンをクリックすることで即座に処理が実行されます。</p>
+<h4 id="_4">全決済</h4>
+<p>全決済は所持中のポジションのLotを全て決済します。</p>
+<h4 id="_5">割合決済</h4>
+<p>割合決済は各ポジションのLotに対して設定された割合分のみを決済します。</p>
+<p>初期値は0.5(50%)に設定されています。</p>
+<p>例: 1.2Lotのポジションに対して割合決済(初期値0.5)をした場合は0.6Lot分が決済され、残りの0.6Lotは保持されたままになります。</p>
+<h5 id="_6">設定項目</h5>
+<p>割合決済の値はVergeRunnerの設定画面から変更できます。</p>
+<p>初期値は0.5(Lotの半分を決済)</p>
+<p>1.0はLotの全てを決済します。</p>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_009.png" /></p>
+<h3 id="pips">合計Pips</h3>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_006.png" /></p>
+<p>ポジションを取りますと、各ポジション毎に現在の損益がPips単位でチャート上にラベルで表示されます。
+複数通貨ペアをまたいで、ラベルの合計値が「合計Pips」に表示されます。</p>
+<p>合計Pipsの値をリセットするにはポジションを全てエグジットしている状態で
+Traderの「合計Pips ボタン」をクリックして下さい。</p>
+<h4 id="pips_1">各ポジションのPipsラベルについて</h4>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_009.png" /></p>
+<p>Pipsラベルには状態に応じた色が設定可能です。
+以下は初期設定値での表示になります。</p>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_011.png" />
+含み損</p>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_012.png" />
+手数料負け</p>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_013.png" />
+含み益</p>
+<h3 id="positionmanager">PositionManager</h3>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_007.png" /></p>
+<p>Traderの「PositionManagerボタン」をクリックすることで表示されます。</p>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_014.png" /></p>
+<p>PositionManagerはポジションを個別に管理するツールです。
+ポジション毎に情報が表示され、全決済と割合決済が実行できます。</p>
+<p>PositionManagerに表示されるアイテムは約定済みのもに限定される為、約定前の指値のポジションは表示されません。</p>
+<h3 id="lotcalculator">LotCalculator</h3>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_008.png" /></p>
+<p>Traderの「LotCalculatorボタン」をクリックすることで表示されます。</p>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_015.png" /></p>
+<p>LotCalculatorは与えられた変数からLotを計算しTraderのクイックエントリーのLotとSL/TPに値をセットするツールです。</p>
+<h4 id="_7">使用する為の準備</h4>
+<p>LotCalculatorを使用するには証拠金の通貨と現在の通貨ペアの関係を把握する必要があります。</p>
+<p>証拠金が円で現在の通貨ペアがXAUUSDの場合
+決済通貨にJPYが無いのでUSDJPYを介して計算をします。
+USDJPYの情報はMT4側で当該通貨が表示状態でないと取得できない為、MT4の通貨ペアの表示を設定します。</p>
+<p>MT4ツールバーから表示 &gt; 通貨ペアリスト をクリック</p>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_016.png" /></p>
+<p>USDJPYが表示状態になっていることを確認して下さい。</p>
+<p>非表示であれば表示状態に変更し閉じるボタンをクリックして下さい。</p>
+<p><img alt="Alt text" src="../../_img/manual/trader/img_manual_trader_017.png" /></p>
+<h4 id="_8">使用方法</h4>
+<p>Lotの計算に必要な変数はLot計算ボタンの上に位置するものになります。
+そのうちの「現在通貨ペア」「通貨量/Lot」は現在開いているチャートから自動的に入力されます。</p>
+<p>全ての項目に入力が完了しましたら、「Lot計算」ボタンをクリックすると計算結果が表示されます。</p>
+<h5 id="_9">決済通貨ペア</h5>
+<p>決済通貨ペアは証拠金とトレード対象の通貨ペアからレートの変換を考慮して入力をします。</p>
+<p>例:トレード通貨ペアがUSDJPY、証拠金が円の場合</p>
+<p>決済通貨が証拠金の通貨と同一なので「決済通貨ペア」にはUSDJPYと入力します。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>このとき入力するシンボルは各証券会社が取り扱っている商品名と必ず同一にして下さい</p>
+</div>
+<p>例: トレード通貨ペアがGOLD.(XAUUSD)、証拠金が円の場合</p>
+<p>決済通貨が証拠金の通貨と異なるのでUSDJPYを介して変換が必要になります。
+なので決済通貨ペアにはUSDJPYと入力します。</p>
+<h5 id="sl-pips">S/L pips</h5>
+<p>pips単位の損失幅を設定します。</p>
+<h5 id="tp-pips">T/P pips</h5>
+<p>pips単位の利益幅を設定します。</p>
+<h5 id="_10">許容損失率(%)</h5>
+<p>証拠金に対する損失許容率を設定します。</p>
+<h5 id="pos">Pos分割数</h5>
+<p>ポジションの分割数を設定します。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 TakahiroNishigaki
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

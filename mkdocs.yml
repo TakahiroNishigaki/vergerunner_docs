@@ -1,4 +1,5 @@
 site_name: VergeRunner
+copyright: "&copy; 2024 TakahiroNishigaki"
 theme:
   name: material
   palette:
@@ -9,12 +10,18 @@ theme:
       name: Switch to system preference
     accent: teal
     primary: teal
-
+markdown_extensions:
+  - tables
+  - admonition
 nav:
   - Home: index.md
   - 機能一覧: functions.md
   - インストール方法: how_to_install.md
-  - 使用方法: how_to_use.md
+  - 使用方法:
+    - Trader: manual\manual_trader.md
+    - Analyst: manual\manual_analyst.md
+    - Hider: manual\manual_hider.md
+    - Alert: manual\manual_alert.md
   - ホットキー: hotkeys.md
-markdown_extensions:
-  - tables
+  - ReleaseNote:
+    - v1.2.0: release_note/rn_v1.2.0.md
