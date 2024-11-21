@@ -21,6 +21,8 @@ nav:
   - 機能紹介: functions.md
   - マニュアル:
     - Alarmの設定: manual\manual_alarm.md
+    - BreakEvenの設定: manual\break_even.md
+    - 割合決済の設定: manual\ratio_exit.md
     - Fibo編集: manual\edit_fib.md
   - ホットキー: hotkeys.md
   - ReleaseNote:
