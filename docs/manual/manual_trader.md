@@ -3,7 +3,7 @@
 
 ![Alt text](../_img/manual/trader/img_manual_trader_001.png)
 
-### 起動方法
+## 起動方法
 ![Alt text](../_img/manual/trader/img_manual_trader_002.png)
 
 VergeRunnerのメインウィンドウの画像のボタンをクリックすると起動します。

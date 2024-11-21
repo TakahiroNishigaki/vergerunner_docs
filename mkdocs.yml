@@ -15,13 +15,18 @@ markdown_extensions:
   - admonition
 nav:
   - Home: index.md
-  - 機能一覧: functions.md
-  - インストール方法: how_to_install.md
-  - 使用方法:
-    - Trader: manual\manual_trader.md
-    - Analyst: manual\manual_analyst.md
-    - Hider: manual\manual_hider.md
-    - Alert: manual\manual_alert.md
+  - クイックスタート:
+    - インストール: how_to_install.md
+    - ライセンス認証: activation.md
+  - 機能紹介: functions.md
+  - マニュアル:
+    - Alarmの設定: manual\manual_alert.md
+    - Fibo編集: edit_fib.md
   - ホットキー: hotkeys.md
   - ReleaseNote:
     - v1.2.0: release_note/rn_v1.2.0.md
+    # - v1.3.0:
+  - トラブルシュート: troubleshooting.md
+plugins:
+extra_css:
+  - css/style.css
