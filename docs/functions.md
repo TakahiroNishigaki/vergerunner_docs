@@ -72,7 +72,7 @@ SL/TPはそれぞれ有効状態でのみ機能します。
 各ポジションのLotを設定された割合分、決済します。  
 初期値は**0.5(50%)**で各ポジションのLotの半分を決済
 
-![Alt text](image.png)
+![Alt text](_img/functions/2024-11-20_16h32_46.png)
 
 ### 現全決済
 
@@ -197,7 +197,7 @@ GUIを初期位置に戻します。
 
 ホットキー: `Ctrl + Shift + R`
 
-<video src="../_video/reset_pos.mp4" controls="true" width="600"></video>
+<video src="../_video/reset_pos_demo.mp4" controls="true" width="600"></video>
 
 ### 時間軸の切り替え
 

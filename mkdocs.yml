@@ -20,8 +20,8 @@ nav:
     - ライセンス認証: activation.md
   - 機能紹介: functions.md
   - マニュアル:
-    - Alarmの設定: manual\manual_alert.md
-    - Fibo編集: edit_fib.md
+    - Alarmの設定: manual\manual_alarm.md
+    - Fibo編集: manual\edit_fib.md
   - ホットキー: hotkeys.md
   - ReleaseNote:
     - v1.2.0: release_note/rn_v1.2.0.md
