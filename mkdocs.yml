@@ -15,9 +15,7 @@ markdown_extensions:
   - admonition
 nav:
   - Home: index.md
-  - クイックスタート:
-    - インストール: how_to_install.md
-    - ライセンス認証: activation.md
+  - インストールと認証について: setup.md
   - 機能紹介: functions.md
   - マニュアル:
     - Alarmの設定: manual\manual_alarm.md
@@ -28,7 +26,7 @@ nav:
   - ReleaseNote:
     - v1.2.0: release_note/rn_v1.2.0.md
     # - v1.3.0:
-  - トラブルシュート: troubleshooting.md
+  - ヘルプ: help.md
 plugins:
 extra_css:
   - css/style.css
