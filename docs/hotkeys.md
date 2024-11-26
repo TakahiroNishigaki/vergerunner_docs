@@ -1,6 +1,7 @@
 # ホットキー
 | 内容        | Key                                  |
 | ----------- | ------------------------------------ |
+| ChartTemplateの保存 | Shift + Ctrl + S |
 | ウィンドウ配置リセット | Shift + Ctrl + R |
 | 全オブジェクトの選択解除 | Shift + Ctrl + D |
 | チャートの自動スクロールの切り替え | Z |
@@ -10,7 +11,10 @@
 | 水平線の描画 | H |
 | neck lineの描画 | N |
 | 等倍lineの描画 | A |
+| 等倍lineの描画 | Shift + A |
 | fibonacci retracementの描画 | F |
+| fibonacci retracementの描画 | Shift + F |
+| fibonacci retracementの描画 | Shift + Ctrl + F |
 | fibonacci expansionの描画 | E |
 | カウント1の描画 | 1 |
 | カウント2の描画 | 2 |

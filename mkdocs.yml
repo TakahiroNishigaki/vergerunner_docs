@@ -22,6 +22,7 @@ nav:
     - BreakEvenの設定: manual\break_even.md
     - 割合決済の設定: manual\ratio_exit.md
     - Fibo編集: manual\edit_fib.md
+    - チャートテンプレートの保存: manual\save_chart_template
   - ホットキー: hotkeys.md
   - ReleaseNote:
     - v1.2.0: release_note/rn_v1.2.0.md

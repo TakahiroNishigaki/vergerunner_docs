@@ -2,6 +2,14 @@
 
 ## Global
 
+### チャートテンプレートの保存
+ワンクリックでチャートテンプレートを保存  
+また一定時間毎に自動で保存する機能もあります。　
+
+ホットキー:`Shift + Ctrl + S`  
+
+![Alt text](_img/functions/2024-11-26_22h46_57.png)
+
 ### ウィンドウサイズ調整
 
 <video src="../_video\resizable_window.mp4" controls="true" width="600"></video>
