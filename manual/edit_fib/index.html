@@ -370,6 +370,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Fibo編集
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -379,6 +390,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      レベル情報を編集する
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      動作の確認
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ファイルとホットキーの対応表
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -536,6 +593,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      レベル情報を編集する
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      動作の確認
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ファイルとホットキーの対応表
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -550,10 +642,60 @@
 
 
 <h1 id="fibonacci-level">Fibonacci Levelの編集方法</h1>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>準備中</p>
+<p>fibonacci retracement/ExtensionとExpansionのlevelをカスタマイズする方法について記述しています。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>データを編集するため、必ずバックアップを取ってから行って下さい。</p>
 </div>
+<h2 id="_1">レベル情報を編集する</h2>
+<p>MT4のfile &gt; データフォルダを開くをクリック</p>
+<p><img alt="Alt text" src="../../_img/manual/edit_fib/2024-12-17_16h56_07.png" /></p>
+<p>エクスプローラーが開くので次のフォルダ階層に入ります。<br />
+「MQL4 &gt; Files」<br />
+Filesフォルダの中に「fibonacci」を接頭辞とした.csvファイルがあります。</p>
+<p><img alt="Alt text" src="../../_img/manual/edit_fib/2024-12-17_16h59_13.png" /></p>
+<p>例としてfibonacci_retracement.csvを編集します。<br />
+fibonacci_retracement.csvを右クリックし「編集」をクリックしメモ帳を開きます。(IDEなどテキストを編集できるものであれば問題ありません)</p>
+<p>カンマを区切りに左側がレベルのテキスト、右側がレベルの数値になります
+この形式が崩れてしまいますと、表示に問題が発生する可能性があるためご注意下さい。</p>
+<p><img alt="Alt text" src="../../_img/manual/edit_fib/2024-12-17_17h04_20.png" /></p>
+<p>今回はこのように編集しました。</p>
+<p><img alt="Alt text" src="../../_img/manual/edit_fib/2024-12-17_17h10_21.png" /></p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>VergeRunnerを立ち上げたまま.csvを編集しても問題ございません。</p>
+</div>
+<h2 id="_2">動作の確認</h2>
+<p>編集内容を保存し、MT4に戻ってFキーまたはAnalystのFibonacci Retracementアイコンをクリックして正しく描画されるかをご確認下さい。</p>
+<p><img alt="Alt text" src="../../_img/manual/edit_fib/2024-12-17_17h10_32.png" /></p>
+<h2 id="_3">ファイルとホットキーの対応表</h2>
+<p>fibonacci_expansion.csv : F</p>
+<table>
+<thead>
+<tr>
+<th>ファイル名</th>
+<th>Key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fibonacci_expansion.csv</td>
+<td>F</td>
+</tr>
+<tr>
+<td>fibonacci_retracement_sub_a.csv</td>
+<td>Shift + F</td>
+</tr>
+<tr>
+<td>fibonacci_retracement_sub_b.csv</td>
+<td>Shift + Ctrl + F</td>
+</tr>
+<tr>
+<td>fibonacci_expansion.csv</td>
+<td>E</td>
+</tr>
+</tbody>
+</table>
 
 
 
